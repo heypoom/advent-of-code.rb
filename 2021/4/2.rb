@@ -60,6 +60,8 @@ def solve(boards, game_draws)
       marked = mark_board(board, round_draws)
       winning = board_winning? marked
 
+      next unless winning
+
       board_wins[board_id] = true if winning
       win_count = board_wins.count(true)
 
