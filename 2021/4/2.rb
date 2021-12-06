@@ -23,12 +23,13 @@ end
 def board_winning?(board)
   size = board.size - 1
 
-  # Check for horizontal wins.
-  (0..size).each do |i|
-    # i is row
-    return true if board[i].all? true
+  (0..size).each do |n|
+    # Check for horizontal wins.
+    # n is row
+    return true if board[n].all? true
 
-    # i is column
+    # Check for vertical wins.
+    # n is column
     return true if vertical_winning?(board, i)
   end
 
