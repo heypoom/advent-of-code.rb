@@ -1,7 +1,7 @@
 class Solution
   def initialize
     @fish_to_spawn = 0
-    @days = 256
+    @days = 18
     @fishes = File.read('./test').split(',').map(&:to_i)
   end
 
