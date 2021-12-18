@@ -1,4 +1,5 @@
 ---
+lar
 include:
 - "**/*.rb"
 exclude:
